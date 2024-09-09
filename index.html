@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1234游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">12341234......</h1>
+        <p class="game-rules">
+            游戏规则：请你从入口处开始，按12341234......的顺序走到出口，并找到路线图（不可以斜着走，也不可以重复走，横着走，竖着走都可以）
+        </p>
+        <div class="button-container">
+            <button id="init7x7Button">初始化7x7</button>
+            <button id="init10x10Button">初始化10x10</button>
+            <div class="show-path-container">
+                <button id="showPathButton">显示正确路径</button>
+                <p id="showPathHint" class="hint-text"></p>
+            </div>
+            <button id="hintButton">提示两步</button> <!-- 新增的提示按钮 -->
+        </div>
+        <div class="table-wrapper">
+            <table id="myTable"></table>
+            <div class="entrance">入口</div>
+            <div class="arrow-left entrance-arrow">&#8592;</div>
+            <div class="exit">出口</div>
+            <div class="arrow-left exit-arrow">&#8592;</div> <!-- 新增的出口箭头 -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
